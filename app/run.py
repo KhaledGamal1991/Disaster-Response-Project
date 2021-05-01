@@ -101,7 +101,8 @@ def index():
     return render_template('master.html', ids=ids, graphJSON=graphJSON)
 
 
-# web page that handles user query and displays model results
+# web page that handles user query
+#displays model results
 @app.route('/go')
 def go():
     # save user input in query
